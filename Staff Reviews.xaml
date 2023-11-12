@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.StaffReviews"
+             Title="Staff Reviews">
+
+    <StackLayout>
+        <!-- Employee Information Entry Fields -->
+        <Entry Placeholder="Employee Name - Title Case required e.g. 'Rohan Ragel' " x:Name="EmployeeNameEntry" />
+        <Entry Placeholder="Employee Department Title Case required e.g. 'Sales Department'" x:Name="EmployeeDepartmentEntry" />
+        <Entry Placeholder="Review Date - Enter in 'DD/MM/YYYY' format" x:Name="ReviewDateEntry" />
+        <Editor Placeholder="Review Comments" x:Name="ReviewCommentsEntry" />
+
+        <!-- Submit Button -->
+        <Button Text="Submit Review" Clicked="SubmitReviewClicked" />
+
+        <!-- Display Area for Entered Reviews -->
+        <ListView x:Name="ReviewListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding EmployeeName}" FontAttributes="Bold" />
+                            <Label Text="{Binding EmployeeDepartment}" />
+                            <Label Text="{Binding ReviewDate}" />
+                            <Label Text="{Binding ReviewComments}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

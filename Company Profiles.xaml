@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.CompanyProfiles"
+             Title="CompanyProfiles">
+    <VerticalStackLayout>
+        <Image
+         Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\roi_logo_colored.png"
+         SemanticProperties.Description="ROI Logo Coloured"
+         HeightRequest="120"
+         HorizontalOptions="Start"
+         VerticalOptions="Start"/>
+ 
+        <Label 
+         Text="Company Departments"
+         VerticalOptions="Start"
+         FontSize="Title"
+         HorizontalOptions="Center" 
+         Margin="0,0,0,20" />
+         
+        <Button
+         Text="HR Department"
+         Clicked="HRDepartmentbtn"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"
+         HeightRequest="50"
+         WidthRequest="500"
+         Margin="0,0,0,20"/>
+
+        <Button
+         Text="IT Department"
+         Clicked="ITDepartmentbtn"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"
+         HeightRequest="50"
+         WidthRequest="500"
+         Margin="0,0,0,20" />
+
+        <Button
+         Text="Sales Department"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"
+         HeightRequest="50"
+         WidthRequest="500" 
+         Margin="0,0,0,20"
+         Clicked="SalesDepartmentbtn"/>
+
+            <Button
+         Text="Admin Department"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center"
+         HeightRequest="50"
+         WidthRequest="500" 
+         Margin="0,0,0,20"
+         Clicked="AdminDepartmentbtn"/>
+
+    </VerticalStackLayout>
+</ContentPage>

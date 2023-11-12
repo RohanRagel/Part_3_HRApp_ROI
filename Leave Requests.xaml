@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.LeaveReq"
+             Title="Leave Requests">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+
+        <Label 
+    Text="Leave Requests (3)"
+    Grid.Column="0"
+    Grid.Row="0"
+    FontSize="Title"
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    Margin="0,0,0,30"/>
+
+
+        <Label
+            Text="Jane Citizen"
+            Grid.Column="0"
+            Grid.Row="1"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            FontSize="Subtitle"
+            Margin="30,0,0,5"/>
+
+        <Label
+            Text="To the HR Department, unfortunately my Mum has fallen ill and I am requesting a day of paid leave next Monday to go to the hospital. She has an operation on Monday morning."
+            FontSize="Body"
+            WidthRequest="850"
+            Grid.Column="0"
+            Grid.Row="2"
+            Margin="30,0,0,40"/>
+
+        <Button
+            Text="Approve"
+            VerticalOptions="Center"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Column="3"
+            Grid.Row="2"
+            Clicked="SendMessageBtn" />
+
+
+
+        <Label
+            Text="John Doe"
+            Grid.Column="0"
+            Grid.Row="3"
+            Margin="30,0,0,0"
+            FontSize="Subtitle" />
+
+        <Label
+            Text="As you may know, I have only used 2 of my 15 sick days this year and I plan to use them all this Christmas I have family visiting. I am requesting that I can use as many as I have available if it does not affect the company too much"
+            FontSize="Body"
+            WidthRequest="850"
+            Grid.Column="0"
+            Grid.Row="4"
+            Margin="30,0,0,40"/>
+
+        <Button
+            Text="Approve"
+            VerticalOptions="Center"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Column="3"
+            Grid.Row="4"
+            Clicked="SendMessageBtn" />
+
+        <Label
+     Text="Maurice Moss"
+     Grid.Column="0"
+     Grid.Row="6"
+     Margin="30,0,0,0"
+     FontSize="Subtitle" />
+
+        <Label
+    Text="My children start their school holidays in two and a half weeks and my wife and I want to take them to Disneyland as it is one of their birthdays. I am requesting a full week of paid leave."
+    FontSize="Body"
+    WidthRequest="850"
+    Grid.Column="0"
+    Grid.Row="7"
+    Margin="30,0,0,40" />
+
+        <Button
+    Text="Approve"
+    VerticalOptions="Center"
+    HorizontalOptions="End"
+    FontSize="Body"
+    Grid.Column="3"
+    Grid.Row="7"
+    Clicked="SendMessageBtn" />
+
+
+    </Grid>
+</ContentPage>

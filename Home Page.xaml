@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\roi_logo_colored.png"
+                SemanticProperties.Description="ROI Logo Coloured"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            
+            <Button
+                x:Name="CompanyProfiles"
+                Text="Company Profiles - View/Edit/Add"
+                SemanticProperties.Hint="Takes you to Company Profiles"
+                Clicked="CompanyProfilebtn"
+                HeightRequest="50"
+                WidthRequest="500"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="Announcements"
+                Text="Announcements - Send/Review"
+                SemanticProperties.Hint="Takes you to Announcements"
+                Clicked="Announcementsbtn"
+                HeightRequest="50"
+                WidthRequest="500"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="EmployeeDashboard"
+                Text="Employee Dashboard - Leave and Staff Reviews"
+                SemanticProperties.Hint="Takes you to Employee Dashboard"
+                HeightRequest="50"
+                WidthRequest="500"
+                Clicked="EmployeeDashboardbtn"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="Settings"
+                Text="Settings"
+                HeightRequest="50"
+                WidthRequest="500"
+                SemanticProperties.Hint="Brightness, text font, theme etc."
+                Clicked="Settingsbtn"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

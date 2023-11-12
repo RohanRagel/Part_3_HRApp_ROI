@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.PreviousAnnouncement"
+             Title="PreviousAnnouncement">
+    <VerticalStackLayout>
+        <Label 
+            Text="Previous Announcements"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Title"
+            Margin="0,0,0,40"/>
+
+        <Image
+           Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\roi_logo_colored.png"
+           SemanticProperties.Description="ROI Logo Coloured"
+           HeightRequest="150"
+           HorizontalOptions="Start"
+           VerticalOptions="Center" />
+        
+        
+
+        <Label
+            Text="All announcements made in the last 30 days.
+            All announcements made after this day will be deleted from history"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            FontSize="Body"
+            Margin="0,0,0,10"
+            WidthRequest="300"
+            HeightRequest="100"/>
+
+        
+        
+        <Label
+        Text="03-7-2023 John Doe: Hi All, just writing to let you know that this Friday is CASUAL FRIDAY!!!!! Please wear your casual every day clothes to celebrate Flynn from Sales as it is his last day Friday :(. Food and drinks will be provided, please meet 4pm at the breakroom on Friday."
+        WidthRequest="500"
+        HeightRequest="100" />
+
+        <Label
+         Text="01-7-2023 Dwight Schrute: Bonuses have been sent out to everyone, well done on an excellent month." 
+         WidthRequest="500"
+         HeightRequest="100" />
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

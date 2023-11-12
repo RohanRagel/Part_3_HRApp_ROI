@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.Announcements"
+             Title="Announcements">
+
+    <StackLayout>
+        <Image
+           Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\roi_logo_colored.png"
+           SemanticProperties.Description="ROI Logo Coloured"
+           HeightRequest="100"
+           HorizontalOptions="Start"
+           VerticalOptions="Start"/>
+        
+        <Label 
+            Text="Announcements"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            FontSize="Title"/>
+            
+        <Button
+          x:Name="SendAnnouncements"
+          Text="Send Announcements"
+          Clicked="SendAnnouncementsbtn"
+          HorizontalOptions="Center"
+          Margin="0,0,0,20"
+          WidthRequest="500"
+          HeightRequest="50"/>
+
+        <Button
+          x:Name="ReviewPrevious"
+          Text="Review Previous"
+          Clicked="PreviousAnnouncementsbtn"
+          HorizontalOptions="Center"
+          Margin="0,0,0,20"
+          WidthRequest="500"
+          HeightRequest="50"/>
+
+        <Label
+         Text="Most previous announcement:"
+         Margin="318,0,0,15" />
+
+
+        <Label
+        Text="03-7-2023 John Doe: Hi All, just writing to let you know that this Friday is CASUAL FRIDAY!!!!! Please wear your casual every day clothes to celebrate Flynn from Sales as it is his last day Friday :(. Food and drinks will be provided, please meet 4pm at the breakroom on Friday."
+        WidthRequest="500"
+        HeightRequest="100" />
+
+
+    </StackLayout>
+</ContentPage>

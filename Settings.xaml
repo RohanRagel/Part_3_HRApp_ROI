@@ -1,0 +1,33 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.Settings"
+             Title="Settings">
+
+    <StackLayout>
+        <Image
+            Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\roi_logo_colored.png"
+            SemanticProperties.Description="ROI Logo Coloured"
+            HeightRequest="100"
+            VerticalOptions="Start"
+            HorizontalOptions="Start" />
+
+        <Label
+            Text="Settings"
+            FontSize="Title"
+            VerticalOptions="Start"
+            HorizontalOptions="Center" />
+
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="Font Size" />
+            <Slider x:Name="FontSizeSlider" Minimum="10" Maximum="30" Value="16" />
+            <Label x:Name="FontSizeLabel" Text="{Binding Source={x:Reference FontSizeSlider}, Path=Value}" />
+
+            <Label Text="Brightness" />
+            <Slider x:Name="BrightnessSlider" Minimum="0" Maximum="100" Value="50" />
+            <Label x:Name="BrightnessLabel" Text="{Binding Source={x:Reference BrightnessSlider}, Path=Value}" />
+
+            <Label Text="Sound Effects" />
+            <Switch x:Name="SoundEffectsSwitch" IsToggled="true" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

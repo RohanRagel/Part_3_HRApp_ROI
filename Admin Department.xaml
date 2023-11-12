@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.AdminDepartment"
+             Title="Admin Department">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!-- First row for "IT Department" label -->
+            <RowDefinition Height="Auto" />
+            <!-- Second row for "Add" button and "Toby Flinderson" button -->
+            <RowDefinition Height="Auto" />
+            <!-- Third row for the second name -->
+            <RowDefinition Height="Auto" />
+            <!-- Fourth row for the third name -->
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <!-- First column for placeholder images -->
+            <ColumnDefinition Width="*"/>
+            <!-- Second column for "IT Department" label -->
+            <ColumnDefinition Width="Auto"/>
+            <!-- Third column for "Add" and "Edit" buttons -->
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            Text="Admin Department"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="Title"/>
+
+        <Image
+            Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\placeholder_male.png"
+            SemanticProperties.Description="Male placeholder png"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Grid.Row="1"
+            Grid.Column="0" />
+
+        <Button
+            x:Name="AddButton"
+            Text="Add"
+            VerticalOptions="Start"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Margin="0,0,0,20"
+            Grid.Row="0"
+            Grid.Column="2"
+            Clicked="Addbtn"/>
+
+        <Button 
+            Text="Michael Scott - Manager - 0123 4567 -  email@address.com - 23 Oak Road"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="Body"
+            Grid.Row="1"
+            Grid.Column="1"
+            Clicked="MossEdit"/>
+
+        <Button Text="Click Name to Edit"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Row="1"
+            Grid.Column="2" />
+
+        <Image
+            Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\placeholder_female.png"
+            SemanticProperties.Description="Female placeholder png"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Grid.Row="2"
+            Grid.Column="0" />
+
+        <Button Text="Elizabeth Keen - Assistant Manager - 0123 4567 -  email@address.com - 23 Oak Road"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="Body"
+            Grid.Row="2"
+            Grid.Column="1"
+            Clicked="JenEdit" />
+
+        <Button Text="Click Name to Edit"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Row="2"
+            Grid.Column="2" />
+
+        <Image
+            Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\placeholder_female.png"
+            SemanticProperties.Description="Female placeholder png"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Grid.Row="4"
+            Grid.Column="0" />
+
+        <Button Text="Donna Paulsen - Receptionist - 0123 4567 -  email@address.com - 23 Oak Road"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="Body"
+            Grid.Row="4"
+            Grid.Column="1"
+            Clicked="RoyEdit"/>
+
+        <Button Text="Click Name to Edit"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Row="4"
+            Grid.Column="2" />
+
+        <Image
+            Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\placeholder_female.png"
+            SemanticProperties.Description="Female placeholder png"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Grid.Row="5"
+            Grid.Column="0" />
+
+        <Button Text="Kelly Kapoor - Customer Service Rep - 0123 4567 -  email@address.com - 23 Oak Road"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="Body"
+            Grid.Row="5"
+            Grid.Column="1"
+            Clicked="RoyEdit"/>
+
+        <Button Text="Click Name to Edit"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Row="5"
+            Grid.Column="2" />
+
+        <Image
+            Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\placeholder_male.png"
+            SemanticProperties.Description="Female placeholder png"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Grid.Row="6"
+            Grid.Column="0" />
+
+        <Button Text="Kevin Malone - Head of Accounting - 0123 4567 -  email@address.com - 23 Oak Road"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="Body"
+            Grid.Row="6"
+            Grid.Column="1"
+            Clicked="RoyEdit"/>
+
+        <Button Text="Click Name to Edit"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Row="6"
+            Grid.Column="2" />
+
+        <Image
+            Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\placeholder_male.png"
+            SemanticProperties.Description="Female placeholder png"
+            HeightRequest="50"
+            HorizontalOptions="Center"
+            Grid.Row="7"
+            Grid.Column="0" />
+
+        <Button Text="Donald Ressler - Accountant - 0123 4567 -  email@address.com - 23 Oak Road"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="Body"
+            Grid.Row="7"
+            Grid.Column="1"
+            Clicked="RoyEdit"/>
+
+        <Button Text="Click Name to Edit"
+            WidthRequest="150"
+            HorizontalOptions="End"
+            FontSize="Body"
+            Grid.Row="7"
+            Grid.Column="2" />
+
+    </Grid>
+</ContentPage>

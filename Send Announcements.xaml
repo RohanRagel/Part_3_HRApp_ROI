@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Part_3_HRApp_ROI.SendAnnouncements"
+             Title="SendAnnouncements">
+    <StackLayout>
+
+
+        <Label
+    Text="Send Announcement"
+    HorizontalOptions="Center"
+    FontSize="Title" />
+        
+        
+        <Image
+    Source="C:\Users\cc\OneDrive\Desktop\TAFE\App Dev\Assessments\New folder\Part_3_HRApp_ROI\Resources\Images\roi_logo_colored.png"
+    SemanticProperties.Description="ROI Logo Coloured"
+    HeightRequest="200"
+    HorizontalOptions="Start" />
+
+
+
+        <Entry
+        Placeholder="Enter text..."
+        WidthRequest="300"
+        HeightRequest="50"
+        Margin="0,0,0,20"/>
+
+        <Button
+            Text="Send Announcement"
+            Clicked="AnnouncementSent"
+            HorizontalOptions="Center"
+            WidthRequest="300"/>
+    </StackLayout>
+</ContentPage>
