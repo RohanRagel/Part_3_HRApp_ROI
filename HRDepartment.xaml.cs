@@ -19,7 +19,7 @@ namespace Part_3_HRApp_ROI
             LoadhremployeeAsync();
         }
 
-        // Load the hremployees from the database and update the ListView1
+        // Load the hremployees from the database and update the ListView
         private async void LoadhremployeeAsync()
         {
             // Retrieve the list of hremployees from the database
