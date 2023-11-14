@@ -33,7 +33,7 @@ public partial class ITDepartment : ContentPage
 
         var editPage = new ContentPage //commit 1 change
         {
-            Content = new StackLayout
+            Content = new StackLayout //commit change
             {
                 Children = { editEntry, saveButton }
             }
