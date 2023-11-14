@@ -13,13 +13,13 @@ public partial class ITDepartment : ContentPage
     }
     private async void MossEdit(object sender, EventArgs e)
     {
-        Button button = (Button)sender;
+        Button button = (Button)sender; //commit 2 change
 
         string buttonText = button.Text;
 
         var editEntry = new Entry { Placeholder = "Edit Information", Text = buttonText };
 
-        // Create a Save button to update the information.
+        // Create a Save button to update the information. 
         var saveButton = new Button { Text = "Save" };
         saveButton.Clicked += (s, args) =>
         {
@@ -31,9 +31,9 @@ public partial class ITDepartment : ContentPage
             DisplayAlert("Profile saved", "The profile has been saved", "OK");
         };
 
-        var editPage = new ContentPage
+        var editPage = new ContentPage //commit 1 change
         {
-            Content = new StackLayout
+            Content = new StackLayout //commit
             {
                 Children = { editEntry, saveButton }
             }
